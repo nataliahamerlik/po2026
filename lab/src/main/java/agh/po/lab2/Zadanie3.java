@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Zadanie3 {
     public static void main(String[] args) {
-        ArrayList<Integer> mojeTypy = new ArrayList<>();
+        ArrayList<Integer> Typy = new ArrayList<>();
         for (int i = 1; i <= 6; i++) {
-            mojeTypy.add(i);
+            Typy.add(i);
         }
 
         Random random = new Random();
@@ -25,7 +25,7 @@ public class Zadanie3 {
                 }
             }
 
-            if (wylosowane.containsAll(mojeTypy)) {
+            if (wylosowane.containsAll(Typy)) {
                 break;
             }
         }
