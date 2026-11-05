@@ -16,4 +16,13 @@ public class CodingBatTest {
     @Test
     public void firstLast6() {
     }
+
+    @Test
+    public void mapAB() {
+    }
+
+    @Test
+    public void wordLen() {
+    }
+
 }
