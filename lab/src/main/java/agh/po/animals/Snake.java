@@ -8,4 +8,7 @@ public class Snake extends Animal {
     public String getDescription() {
         return "Wąż: " + name + ", nogi: " + legs;
     }
+    public void makeSound() {
+        System.out.println(name + " Ssssss");
+    }
 }

@@ -22,6 +22,11 @@ public class Zoo {
             }
         }
 
+        for (Animal animal : animals) {
+            System.out.println(animal.getDescription());
+            animal.makeSound();
+        }
+
         int totalLegs = calcTotalLegs(animals);
         System.out.println("Suma wszystkich nóg: " + totalLegs);
     }
@@ -29,7 +34,7 @@ public class Zoo {
     public static int calcTotalLegs(Animal[] animals) {
         int totalLegs = 0;
         for (Animal animal : animals) {
-            totalLegs += animal.legs;
+            totalLegs += animal.getLegs();
         }
         return totalLegs;
     }
