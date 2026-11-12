@@ -17,6 +17,7 @@ public class CodingBatTest {
     public void firstLast6() {
     }
 
+
     @Test
     public void mapAB() {
     }

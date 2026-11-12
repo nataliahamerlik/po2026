@@ -25,6 +25,7 @@ public class CodingBat {
         return nums[0] == 6 || nums[nums.length - 1] == 6;
     }
 
+
     public Map<String, String> mapAB(Map<String, String> map) {
         if (map.containsKey("a") && map.containsKey("b")) {
             map.put("ab", map.get("a") + map.get("b"));
