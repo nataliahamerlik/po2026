@@ -40,6 +40,7 @@ public class CodingBat {
         return map;
     }
 
+
     public static void main(String[] args) {
         CodingBat cb = new CodingBat();
 
