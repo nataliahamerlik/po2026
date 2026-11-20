@@ -16,25 +16,26 @@ public class SkrzyniaBiegow extends Komponent {
     }
 
     public void zwiekszBieg() {
-        if (sprzeglo.isStanSprzegla() && aktualnyBieg < iloscBiegow) {
+        if (aktualnyBieg < iloscBiegow) {
             aktualnyBieg++;
             aktualizujPrzelozenie();
         }
     }
 
     public void zmniejszBieg() {
-        if (sprzeglo.isStanSprzegla() && aktualnyBieg > 0) {
+        if (aktualnyBieg > 0) {
             aktualnyBieg--;
             aktualizujPrzelozenie();
         }
     }
 
-    public void wyzerujBieg() {
+    public void zerujBieg() {
         this.aktualnyBieg = 0;
         this.aktualnePrzelozenie = 0.0;
     }
 
     private void aktualizujPrzelozenie() {
+        // Proste przełożenie zależne od biegu (np. bieg 1 -> 0.01, bieg 2 -> 0.02)
         this.aktualnePrzelozenie = aktualnyBieg * 0.01;
     }
 

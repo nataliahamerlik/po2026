@@ -22,15 +22,12 @@ public class Komponent {
     public String getModel() {
         return model;
     }
-
     public String getNazwa() {
         return nazwa;
     }
-
     public double getWaga() {
         return waga;
     }
-
     public double getCena() {
         return cena;
     }
